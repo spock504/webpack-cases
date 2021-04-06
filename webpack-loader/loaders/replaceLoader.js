@@ -1,6 +1,7 @@
 const loaderUtils = require('loader-utils');
 
 module.exports = function (source) {
+    console.log('replaceLoader');
     const options = loaderUtils.getOptions(this); // 推荐使用loader-utils来传参，获取loader配置信息
     const callback = this.async() // 1. 异步操作
     setTimeout(() => {

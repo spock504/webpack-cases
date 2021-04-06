@@ -16,12 +16,17 @@ module.exports = {
     module: {
         rules: [{
             test: /\.js$/,
-            use: {
-                loader: 'replaceLoader', // 自定义loader名字
-                options: {
-                    name: 'echo'
-                }
-            }
+            use: [
+                {
+                    loader: 'catchLoader', // 自定义loader名字
+                },
+                {
+                    loader: 'replaceLoader', // 自定义loader名字
+                    options: {
+                        name: 'echo'
+                    }
+                },
+            ]
         }]
     }
 }
