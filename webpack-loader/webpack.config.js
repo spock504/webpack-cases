@@ -18,7 +18,7 @@ module.exports = {
             test: /\.js$/,
             use: [
                 {
-                    loader: 'catchLoader', // 自定义loader名字
+                    loader: 'catchLoader2', // 自定义loader名字
                 },
                 {
                     loader: 'replaceLoader', // 自定义loader名字

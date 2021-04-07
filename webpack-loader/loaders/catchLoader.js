@@ -19,7 +19,7 @@ module.exports = function (source) {
 
             // 如果 await 语句已经被 try/catch 包裹则不会再次注
             if (path.findParent((path) => t.isTryStatement(path.node))) return
-            const catchCode = 'e => `console.error(${e})`'
+            const catchCode = `console.error(${'e'})`
             const catchNode = parser.parse(catchCode).program.body;
 
             if (t.isVariableDeclarator(path.parent)) { // *1. 变量声明
