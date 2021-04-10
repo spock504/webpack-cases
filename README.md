@@ -3,7 +3,7 @@
  * @Date: 2021-03-24 16:43:36
  * @Description: file content
  * @LastEditors: liujian
- * @LastEditTime: 2021-03-31 15:15:08
+ * @LastEditTime: 2021-04-10 11:03:22
 -->
 # webpack-cases
 webpack 测试使用
@@ -14,6 +14,7 @@ webpack 测试使用
 安装：npm i -D webpack webpack-cli loader-utils
 创建配置文件： webpack.config.js
 ```
+**Loader负责文件转换，Plugin便是负责功能扩展**
 
 ## 编写loader的思路
 **遵循规范：**  
@@ -24,5 +25,9 @@ webpack 测试使用
 
         1. loader的加载从右往左进行
         2. Webpack选择了compose方式
+
+# webpack-externals
+Webpack 构建的代码中不用被打包的模块，在使用第三方库时可以直接使用cnd（Script 中引入）上的资源。   
+
 
 
