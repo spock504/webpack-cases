@@ -29,7 +29,8 @@ module.exports = {
         }
     },
     // 把import导入语句里的 （键）Jquery 替换成运行环境里的全局变量 （值）jQuery
+    //  当在script中导入CDN链接时，可以通过控制台window对象查看包名对应的CDN名字
     externals: {
-        jQuery: 'jQuery',
+        jquery: 'jQuery',
     },
 };
