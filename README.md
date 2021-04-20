@@ -5,9 +5,6 @@
  * @LastEditors: liujian
  * @LastEditTime: 2021-04-10 11:03:22
 -->
-# webpack-cases
-webpack 测试使用
-
 # webpack-loader
 编写一个 Webpack 的 loader
 ```
